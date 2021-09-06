@@ -1,0 +1,26 @@
+# Ignore all at the root.
+/*
+
+# Except:
+!.gitignore
+!Resources
+!Project
+!Documentation
+!README.md
+!README/
+
+#Also ignore
+Project/DerivedData
+Resources/Cache
+Resources/Private
+*.sublime*
+userPreferences.*/
+Project/Sources/Classes/Private
+_*.4dm
+Project/Sources/Methods/Private
+Project/Trash
+
+# Ignore everywhere.
+__MACOSX
+.DS_Store
+

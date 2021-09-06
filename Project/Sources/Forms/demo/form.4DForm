@@ -1,0 +1,216 @@
+﻿{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"mypopup": {
+					"type": "dropdown",
+					"left": 12,
+					"top": 26,
+					"width": 271,
+					"height": 32,
+					"events": [
+						"onDataChange"
+					],
+					"focusable": false
+				},
+				"mypopup1": {
+					"type": "dropdown",
+					"left": 326,
+					"top": 26,
+					"width": 271,
+					"height": 32,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"mypopup2": {
+					"type": "dropdown",
+					"left": 648,
+					"top": 26,
+					"width": 271,
+					"height": 32,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"devicesbycustomer": {
+					"type": "listbox",
+					"left": 17,
+					"top": 91,
+					"width": 902,
+					"height": 341,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.mydevices",
+					"columns": [
+						{
+							"header": {
+								"text": "ID",
+								"name": "Header1",
+								"fontWeight": "bold"
+							},
+							"name": "Column1",
+							"dataSource": "This:C1470.ID",
+							"width": 250,
+							"footer": {
+								"name": "Footer1"
+							}
+						},
+						{
+							"header": {
+								"name": "Header2",
+								"text": "ClientID",
+								"fontWeight": "bold"
+							},
+							"name": "Column2",
+							"dataSource": "This:C1470.ClientID",
+							"width": 250,
+							"footer": {
+								"name": "Footer2"
+							}
+						},
+						{
+							"header": {
+								"name": "Header3",
+								"text": "Type",
+								"fontWeight": "bold"
+							},
+							"name": "Column3",
+							"dataSource": "This:C1470.type",
+							"width": 250,
+							"footer": {
+								"name": "Footer3"
+							}
+						},
+						{
+							"header": {
+								"name": "Header4",
+								"text": "Price",
+								"fontWeight": "bold"
+							},
+							"name": "Column4",
+							"dataSource": "This:C1470.price",
+							"footer": {
+								"name": "Footer4"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"mylb1": {
+					"type": "listbox",
+					"left": 17,
+					"top": 91,
+					"width": 902,
+					"height": 341,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.data",
+					"columns": [
+						{
+							"header": {
+								"text": "ID",
+								"name": "Header5",
+								"fontWeight": "bold"
+							},
+							"name": "Column5",
+							"dataSource": "This:C1470.ID",
+							"width": 250,
+							"footer": {
+								"name": "Footer5"
+							}
+						},
+						{
+							"header": {
+								"name": "Header6",
+								"text": "First name",
+								"fontWeight": "bold"
+							},
+							"name": "Column6",
+							"dataSource": "This:C1470.FirstName",
+							"width": 250,
+							"footer": {
+								"name": "Footer6"
+							}
+						},
+						{
+							"header": {
+								"name": "Header7",
+								"text": "Last name",
+								"fontWeight": "bold"
+							},
+							"name": "Column7",
+							"dataSource": "This:C1470.LastName",
+							"width": 250,
+							"footer": {
+								"name": "Footer7"
+							}
+						},
+						{
+							"header": {
+								"name": "Header8",
+								"text": "Birthday",
+								"fontWeight": "bold"
+							},
+							"name": "Column8",
+							"dataSource": "This:C1470.DOB",
+							"footer": {
+								"name": "Footer8"
+							}
+						}
+					]
+				}
+			}
+		}
+	],
+	"geometryStamp": 35,
+	"method": "method.4dm"
+}
